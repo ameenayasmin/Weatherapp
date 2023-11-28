@@ -11,7 +11,6 @@ const Weatherdata = () => {
   const weatherinfo = async () => {
     try {
       let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchcity}&units=metric&appid=6e7e16ecb80652b9c129ed5bb8c77937`;
-
       const res = await fetch(url);
       const data = await res.json();
       console.log(data);
@@ -38,12 +37,10 @@ const Weatherdata = () => {
     } catch (error) {
       console.log(error)
     }
-
   };
 
   useEffect(() => {
     weatherinfo();
-
   }, []);
   
   return (
