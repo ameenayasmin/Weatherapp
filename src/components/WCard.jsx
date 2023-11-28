@@ -28,9 +28,7 @@ const WCard = ({ temp, humidity,pressure,weathermood,name,speed,country,sunset,}
           break;
       }
     }
-
-   }, [weathermood]);
-
+  }, [weathermood]);
 
   return (
     <div>
@@ -53,18 +51,15 @@ const WCard = ({ temp, humidity,pressure,weathermood,name,speed,country,sunset,}
               <div className="place">
                 {name}, {country}
               </div>
-
-            </div>
+               </div>
             </div>
 
           <div className="currentDate">
             <div className="date">{new Date().toLocaleString()}</div>
-
+            </div>
           </div>
-          </div>
-
-
-        {/* our 4column section  */}
+          
+          {/* our 4column section  */}
         <div className="extra-temp">
           <div className="temp-info-minmax">
             <div className="two-sided-section">
@@ -110,30 +105,6 @@ const WCard = ({ temp, humidity,pressure,weathermood,name,speed,country,sunset,}
             </div>
           </div>
         </div>
-        {/* <div className='mainflex'>
-<div className='leftside'>
-  <div>
-    <p>Sunset</p>
-    <p>4.00pm</p>
-  </div>
-  <div>
-    <p>Sunset</p>
-    <p>4.00pm</p>
-  </div>
-</div>
-<div className='rightside'>
-<div>
-    <p>Sunset</p>
-    <p>4.00pm</p>
-  </div>
-  <div>
-    <p>Sunset</p>
-    <p>4.00pm</p>
-  </div>
-</div>
-
-</div> */}
-
       </div>
       </div>
   )
